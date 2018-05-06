@@ -11,3 +11,9 @@ To change some element property find it in Attributes and change it.
 To add launcher icon in the app - in mipmap folder are default icons. Smallest is hdpi, largest - xxxhdpi. Each one is appropriate for different devices and resolutions.
 In order to tell the app to use the new icons in AndroidManifest.xml file chanage teh value of the android:icon property to new launcher icons.
 AndroidManifest.xml file is the BOSS file - all info about the map is in it.
+
+The Android app has four main sections:
+manifests - here is the AndroidManifest file - the BOSS. It has the info for the app - how to be communicated, what components has the app, persmission and etc.
+java - like a Technician. All the programm logic is here. 
+res - like s Designer. Here are all the elements that are related to the design.
+Gradle Scripts - like a Builder.
