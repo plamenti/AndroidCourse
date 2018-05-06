@@ -8,3 +8,6 @@ Under res folder is drawable folder that should contain the graphics for the app
 To add an image to the activity_main xml scroll down in the Palette to Image View. The Image View is like an empty picture frame in which we can hang an image - just drag and drop the Image View somewhere in the layout. Pop-up Resources should appear and we can choose the resource for the image that we want to add to the view - select Project -> the source file of the image. In Attributes panel under ImageView section in srcCompat field should be appeared the source of the image.
 To list all attributes for activity_main layout click View all attributes in Attributes panel. To change the background color of the main view select background property -> click the dots -> from Resources pop-up select Color ->  Project -> some color.
 To change some element property find it in Attributes and change it.
+To add launcher icon in the app - in mipmap folder are default icons. Smallest is hdpi, largest - xxxhdpi. Each one is appropriate for different devices and resolutions.
+In order to tell the app to use the new icons in AndroidManifest.xml file chanage teh value of the android:icon property to new launcher icons.
+AndroidManifest.xml file is the BOSS file - all info about the map is in it.
