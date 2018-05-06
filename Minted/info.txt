@@ -4,3 +4,4 @@ The strings.xml is under the values directory and it should contain all the text
 The styles.xml is also under the values directory and here we decide on what style, what theme to base our app on.
 The component tree is in Design view under Palette and lists all the elements on the screen.
 We can change teh attributes/properties of these elements in Attributes panel.
+UNder res folder is drawable folder that should contain the graphics for the app.
