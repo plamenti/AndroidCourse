@@ -18,8 +18,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button button = (Button) findViewById(R.id.rollbutton);
-        ImageView leftDice = (ImageView) findViewById(R.id.image_leftDice);
-        ImageView rightDice = (ImageView) findViewById(R.id.image_rightDice);
+        final ImageView leftDice = (ImageView) findViewById(R.id.image_leftDice);
+        final ImageView rightDice = (ImageView) findViewById(R.id.image_rightDice);
+        final int[] diceArray = {
+                R.drawable.dice1,
+                R.drawable.dice2,
+                R.drawable.dice3,
+                R.drawable.dice4,
+                R.drawable.dice5,
+                R.drawable.dice6
+        };
 
         // To detect taps on screen (or on some element) we need some listener
         button.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
                 Random randomNumberGenerator = new Random();
                 int number = randomNumberGenerator.nextInt(6);
                 Log.d("Dicee", "The random number is: " + number);
+
+                leftDice.setImageResource(diceArray[number]);
+                number = randomNumberGenerator.nextInt(6);
+                rightDice.setImageResource(diceArray[number]);
             }
         });
     }
