@@ -3,6 +3,8 @@ package com.plamenti.dicee;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -16,5 +18,13 @@ public class MainActivity extends AppCompatActivity {
         Button button = (Button) findViewById(R.id.rollbutton);
         ImageView leftDice = (ImageView) findViewById(R.id.image_leftDice);
         ImageView rightDice = (ImageView) findViewById(R.id.image_rightDice);
+
+        // To detect taps on screen (or on some element) we need some listener
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Dicee", "The button has been pressed");
+            }
+        });
     }
 }

@@ -14,3 +14,8 @@ Next -> Finish
 If we change the name of the launcher icon, we should navigate to AndroidManifest.xml and change android:icon="@mipmap/new_launcher_icon_name"
 
 All graphical resources should be put in res folder.
+
+To view the log messages on Huawei - https://stackoverflow.com/questions/38587844/msecurityinputmethodservice-is-null-in-logcat
+Dial:
+*#*#2846579#*#*
+and a hidden menu is shown. Go to "Background Setting" -> "Log setting" and enable the log levels.
