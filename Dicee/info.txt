@@ -11,3 +11,6 @@ For Icon type select Launcher Icons
 From Source Asset select Asset type Image
 Add the path to the assets - should be .png with resolution e..g. 512x512. The Android studio will create from it files in all needed resolutions.
 Next -> Finish
+If we change the name of the launcher icon, we should navigate to AndroidManifest.xml and change android:icon="@mipmap/new_launcher_icon_name"
+
+All graphical resources should be put in res folder.
