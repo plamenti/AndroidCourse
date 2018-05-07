@@ -13,7 +13,29 @@ Add the path to the assets - should be .png with resolution e..g. 512x512. The A
 Next -> Finish
 If we change the name of the launcher icon, we should navigate to AndroidManifest.xml and change android:icon="@mipmap/new_launcher_icon_name"
 
-All graphical resources should be put in res folder.
+All graphical resources should be put in res folder - open res folder and paste into it drawable graphic resources
+
+All business logic is in the rotected void onCreate(Bundle savedInstanceState) method and is used R to access the resources - e.g.
+	final ImageView ballDisplay = (ImageView) findViewById(R.id.image_eightBall);
+		final Button askButton = (Button) findViewById((R.id.askButton));
+		final int[] ballArray = {
+					R.drawable.ball1,
+					R.drawable.ball2,
+					R.drawable.ball3,
+					R.drawable.ball4,
+					R.drawable.ball5
+			};
+	
+			askButton.setOnClickListener(new View.OnClickListener() {
+				Random randomNumberGeneartor = new Random();
+				@Override
+				public void onClick(View v) {
+					int number = randomNumberGeneartor.nextInt(5);
+					ballDisplay.setImageResource(ballArray[number]);
+					Log.d("EightBall", "Ask button is clicked");
+					Log.d("Random", "Random number: " + number);
+				}
+			});
 
 To view the log messages on Huawei - https://stackoverflow.com/questions/38587844/msecurityinputmethodservice-is-null-in-logcat
 Dial:
