@@ -1,0 +1,13 @@
+To change the theme:
+Open values/styles.xml (C:\AndroidStudioProjects\AndroidCourse\Dicee\app\src\main\res\values\styles.xml) and above the window should appear label "Edit all themes in the project in the theme editor" and on the left side of the label should appear link to "Open editor" - Click on the link
+or
+Select Tools -> Theme Editor
+From Theme Parent select the theme or select All Themes and select the theme
+
+
+To add new launcher icons:
+Right click on the res directory -> New -> Image Asset
+For Icon type select Launcher Icons
+From Source Asset select Asset type Image
+Add the path to the assets - should be .png with resolution e..g. 512x512. The Android studio will create from it files in all needed resolutions.
+Next -> Finish
