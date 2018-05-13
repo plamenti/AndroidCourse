@@ -1,0 +1,24 @@
+In order to run projects that have error: cannot resolve symbol AppCompatActivity or Theme....
+
+Solution:
+Lets get going step by step: first clean project by using
+
+Build->Clean
+
+if this doesn't helps then use your second weapon
+
+File>Invalidate Caches/Restart...
+
+But the real problem begins when all the above options doesn't works so use your ultimate weapon close project and go to project location directory and delete
+
+.idea
+
+You can open your project now again. This worked for me and problem comes most often when you are working with VCS. And this problem is not associated with android component classes but also to the libraries, both shows the same error.
+
+#######################
+In order to fix error: cannot resolve symbol style="@android:style/Widget.ProgressBar.Horizontal"
+Remove @
+
+######################
+In ot=rder to fix error: please select android sdk
+File -> Sync Project with Gradle Files
