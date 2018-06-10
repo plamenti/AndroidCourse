@@ -20,5 +20,5 @@ In order to fix error: cannot resolve symbol style="@android:style/Widget.Progre
 Remove @
 
 ######################
-In ot=rder to fix error: please select android sdk
+In order to fix error: please select android sdk
 File -> Sync Project with Gradle Files
